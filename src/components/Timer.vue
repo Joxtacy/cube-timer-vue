@@ -21,7 +21,7 @@ export default {
     title: String
   },
   methods: {
-    startTimer: function (event) {
+    startTimer (event) {
       console.log('Start Timer')
       if (!this.handle && !this.timerRunning) {
         this.timerRunning = true
@@ -43,7 +43,7 @@ export default {
         this.timerRunning = false
       }
     },
-    clearTimer: function (event) {
+    clearTimer (event) {
       console.log('Clear Timer')
       if (this.handle) {
         this.handle = clearInterval(this.handle)
@@ -52,9 +52,6 @@ export default {
         this.time = 0
         // change color or something
       }
-    },
-    derp: function () {
-      console.log('Well, that worked')
     }
   }
 }
